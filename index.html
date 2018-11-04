@@ -7,19 +7,78 @@
   <link rel="stylesheet" href="main.css">
   <title>SurveyForm</title>
 </head>
-<body>  
-  <div id="title">
-    <h1></h1>
-  </div>
-  <div id="flex-container">
-    <div class="box box1">1</div>
-    <div class="box box2">2</div>
-    <div class="box box1">3</div>
-    <div class="box box2">4</div>
-    <div class="box box1">5</div>
-    <div class="box box2">6</div>
-    <div class="box box1">7</div>
-    <div class="box box2">8</div>
-  </div>
+<body>
+ <div id="container">
+    <div id="title">
+      <h1>Survey Form</h1>
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+    </div>
+    <form action="" method="post" id="survey-form">
+    <div id="flex-container">
+    <div class="box box1"><p><label for="name"><sup>&#8727;</sup>Name:</label></p></div>
+    <div class="box box2"><p><input type="text" id="name" placeholder="Enter your name" maxlength="30" size="40" required></p></div>
+    <div class="box box1"><p><label for="email"><sup>&#8727;</sup>Email:</label></p></div>
+    <div class="box box2"><p><input type="email" id="email" placeholder="Enter your email" maxlength="30" size="40" required></p></div>
+    <div class="box box1"><p><label for="age"><sup>&#8727;</sup>Age:</label></p></div>
+    <div class="box box2"><p><input type="number" id="age" placeholder="1" maxlength="3" min="1" max="160" required></p></div>
+    <div class="box box1"><p>Which option best describes your current role?</p></div>
+    <div class="box box2"><p><select>
+        <option value="role" disabled selected>Select an option</option>
+        <option value="Student">Student</option>
+        <option value="Full Time Job">Full Time Job</option>
+        <option value="Full Time Learner">Full Time Learner</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>
+    </select></p></div>
+    <div class="box box1">
+      <p><sup>&#8727;</sup>How likely is that you would recommend freeCodeCamp to a friend?</p>
+    </div>
+    <div class="box box2">
+      <p><input type="radio" id="radio" name="recommend" value="rad1"> Definitely<Br>
+        <input type="radio" id="radio" name="recommend" value="rad2"> Maybe<Br>
+        <input type="radio" id="radio" name="recommend" value="rad3"> Not sure</p>
+    </div>
+    <div class="box box1">
+      <p>What do you like most in FCC?</p>
+    </div>
+    <div class="box box2">
+      <p><select>
+          <option value="role" disabled selected>Select an option</option>
+          <option value="Challenges">Challenges</option>
+          <option value="Projects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Open Source">Open Source</option>
+        </select></p>
+    </div>
+    <div class="box box1">
+      <p>Things that should be improved in the future</p>
+      <p>(Check all that apply)</p>
+    </div>
+    <div class="box box2">
+      <p><input type="checkbox" id="radio" name="perfect" value="Front-end-Project"> Front-end-Project<Br>
+        <input type="checkbox" id="radio" name="perfect" value="Back-end-Project"> Back-end-Project<Br>
+        <input type="checkbox" id="radio" name="perfect" value="Data Visualization">Data Visualization<Br>
+        <input type="checkbox" id="radio" name="perfect" value="Challenges"> Challenges<Br>
+        <input type="checkbox" id="radio" name="perfect" value="Open Source Community"> Open Source Community<Br>
+        <input type="checkbox" id="radio" name="perfect" value="Gitter help rooms"> Gitter help rooms<Br>
+        <input type="checkbox" id="radio" name="perfect" value="Videos"> Videos<Br>
+        <input type="checkbox" id="radio" name="perfect" value="City Meetups"> City Meetups<Br>
+        <input type="checkbox" id="radio" name="perfect" value="Wiki"> Wiki<Br>
+        <input type="checkbox" id="radio" name="perfect" value="Forum"> Forum<Br>
+        <input type="checkbox" id="radio" name="perfect" value="Additional Courses"> Additional Courses<Br>
+        </p>
+    </div>
+    <div class="box box1">
+      <p><label for="comment">Any Comments or Suggestions?</label></p>
+    </div>
+    <div class="box box2">
+      <p><textarea id="comment" placeholder="Enter your comment here ..." rows="5" cols="1"></textarea></p>
+    </div>
+    </div>
+    <div id="button">
+      <p><input type="button" value="Submit"></p>
+    </div>
+    </form>
+    </div>
 </body>
 </html>
